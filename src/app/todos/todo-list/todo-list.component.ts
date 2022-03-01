@@ -21,7 +21,9 @@ export class TodoListComponent implements OnInit {
 
 
   // 1ro inyectamos el store<appstate> dentro del todo-list
-  constructor( private store: Store<AppState>) { }
+  constructor( private store: Store<AppState>) { 
+    
+  }
 
   ngOnInit(): void {
     // 3ro en la funcion ngInit nos subscribimos a los todos y a los filtros.
