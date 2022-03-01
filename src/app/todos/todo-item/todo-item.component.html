@@ -1,0 +1,10 @@
+<!-- List items should get the class `c` when editing and `completed` when marked as completed -->
+
+<li [class.completed]="todo.complete" [class.editing]="editing">
+    <div class="view">
+        <input class="toggle" [formControl]="chkCompleted" type="checkbox">
+        <label (dblclick)="edit()">{{todo?.text}}</label>
+        <button class="destroy" (click)="deleteTodo()"></button>
+    </div>
+    <input class="edit" [formControl]="txtInput" type="text" #physicInput (blur)="finishEditing()">
+</li>

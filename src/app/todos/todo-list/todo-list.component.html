@@ -1,0 +1,7 @@
+<ul class="todo-list">
+
+    <!-- pasamos un ngFor para obtener todos los todos, ademas pasamos el pipe filterTodo con el
+    argumento actualFilter para que nos muestre en el front la lista filtrada -->
+    <app-todo-item *ngFor="let todo of todos | filterTodo: actualFilter" [todo]="todo"></app-todo-item>
+
+</ul>
