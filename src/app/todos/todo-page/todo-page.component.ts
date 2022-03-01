@@ -21,7 +21,7 @@ export class TodoPageComponent implements OnInit {
   toggleAll() {
     this.completed = !this.completed;
     this.store.dispatch(actions.toggleAll({completed: this.completed}))
-    console.log(this.completed)
+    
   }
 
 }
